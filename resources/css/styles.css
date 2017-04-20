@@ -1,0 +1,59 @@
+/*Fonts*/
+
+
+/*General*/
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+div {
+
+}
+
+span {
+    font-size: 1.5rem;
+    color: rgba(201, 201, 201, 0.85);
+}
+
+strong {
+    font-weight: 800;
+    color: rgba(79, 79, 79, 0.95);
+}
+
+/*Top Nav Bar*/
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+    background-color: white;
+}
+
+.navList li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+.navList li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+/*Start Banner*/
+
+.startBanner {
+
+}
