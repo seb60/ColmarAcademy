@@ -8,18 +8,67 @@ html {
     font-size: 16px;
 }
 
-div {
-
-}
-
 span {
     font-size: 1.5rem;
-    color: rgba(201, 201, 201, 0.85);
 }
 
 strong {
     font-weight: 800;
-    color: rgba(79, 79, 79, 0.95);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    padding: 2rem 2rem 2rem 1.5rem;
+    max-width: 1200px;
+}
+
+.bigContainer {
+    display: flex;
+    max-width: 60%;
+    height: auto;
+}
+
+.bigContainer img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+}
+
+.bigContainer h1 {
+    width: 100%;
+}
+
+.smallContainer {
+    width: 26.4375rem;
+}
+
+.mainPage {
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*General Colors*/
+
+.dark {    
+    color: rgba(40, 40, 40, 0.95);
+}
+
+.light {
+    color: rgba(201, 201, 201, 0.85);
 }
 
 /*Top Nav Bar*/
@@ -31,6 +80,9 @@ strong {
     height: 4rem;
     padding: 0 1.5rem;
     background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .navList li {
@@ -40,7 +92,7 @@ strong {
 
 .navList li a {
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .logo {
@@ -55,5 +107,45 @@ strong {
 /*Start Banner*/
 
 .startBanner {
+    display: flex;
+    background-color: rgba(201, 201, 201, 0.85);
+    top: 64px;
+}
 
+.bannerBox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bannerBox h1 {
+    padding: 1.5rem 0;
+}
+
+.bannerBox h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.startBox {
+    padding: .5rem;
+    background-color: rgba(79, 79, 79, 0.95);
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/*Academy Information*/
+
+.academyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.practice {
+    display: flex;
+    flex-direction: column;
 }
