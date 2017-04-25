@@ -28,16 +28,17 @@ h1 {
 
 h3 {
     font-size: 1.2rem;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 h4 {
     font-size: 1rem;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 h5 {
     color: lightskyblue;
+    font-size: 1.1rem;
 }
 
 .container {
@@ -52,7 +53,7 @@ h5 {
 
 .bigContainer {
     display: flex;
-    /*width: 60%;*/
+    width: 60%;
     height: auto;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
@@ -115,6 +116,11 @@ h5 {
     color: rgba(201, 201, 201, 0.85);
 }
 
+.lighterBackground {
+    background-color: rgba(232, 232, 232, 0.80);
+
+}
+
 /*Top Nav Bar*/
 
 #navWrap {
@@ -164,7 +170,7 @@ h5 {
 .bannerBox {
     display: flex;
     flex-direction: column;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     justify-content: center;
     align-items: flex-start;
     width: 40%;
@@ -221,41 +227,65 @@ h5 {
     height: auto;
 }
 
-/*.smallImg {
-    width: 35%;
-    height: auto;
-}
-
-.smallImg img {
-    max-width: 100%;
-}*/
-
 .info {
     margin-left: 1.5rem;
 }
-
-.textContainer h1 {
-    padding: 1rem 0;
-}
-
 
 .textContainer {
     max-width: 100%;
 }
 .textContainer h1 {
+    padding-top: 1rem;
     width: 100%;
 }
 
 .textContainer h3 {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    font-family: "Play";
 }
 
-.info h3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.info h3,
+.info h4,
+.info h5 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }   
 
-.info h4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+/*Start Learning Section*/
+
+.startLearning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    padding: 2rem 0;
+}
+
+.miniContainerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.miniContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniImgContainer {
+    display: block;
+    height: 13.75rem;
+    top: 50%;
+    /*bottom: 6.875rem;*/
+    widows: auto;
+}
+
+.miniImgContainer img {
+    overflow: hidden;
+    bottom: 6.875rem;
 }
