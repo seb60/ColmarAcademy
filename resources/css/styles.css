@@ -8,6 +8,12 @@ html {
     font-size: 16px;
 }
 
+body {
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+}
+
 span {
     font-size: 1.5rem;
 }
@@ -23,38 +29,74 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+h5 {
+    color: lightskyblue;
 }
 
 .container {
     display: flex;
     padding: 2rem 2rem 2rem 1.5rem;
-    max-width: 1200px;
+    /*width: 73.593rem;*/
+    /*width: 100%;*/
+    margin: auto;
+    z-index: 10;
 }
 
 .bigContainer {
     display: flex;
-    max-width: 60%;
+    width: 60%;
     height: auto;
+    margin-right: 1.4rem;
 }
 
 .bigContainer img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     display: block;
+    /*padding: 2rem 0;*/
 }
 
-.bigContainer h1 {
+.textContainer {
+    max-width: 100%;
+}
+.textContainer h1 {
     width: 100%;
 }
 
+.textContainer h3 {
+    padding: 1.5rem 0;
+}
+
+.mediumContainer {
+    display: flex;
+    margin: 0;
+    max-width: 26.4375rem;
+    flex-direction: column;
+}
+
 .smallContainer {
-    width: 26.4375rem;
+    display: flex;
+    max-width: 100%;
+    padding: 2rem;
+    border-left: .5px solid rgba(201, 201, 201, 0.85);
+    border-bottom: .5px solid rgba(201, 201, 201, 0.85);
+    /*margin-left: 1rem;*/
+    height: 33.3%;
+
 }
 
 .mainPage {
     position: relative;
-    top: 4rem;
+    top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,16 +115,20 @@ h3 {
 
 /*Top Nav Bar*/
 
-#navBar {
+#navWrap {
+    z-index: 50;
     display: flex;
+    justify-content: center;
+    height: 4rem;
+    /*padding: 0 1.5rem;*/
+    background-color: white;
+}
+
+.navBar.container {
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
-    padding: 0 1.5rem;
-    background-color: white;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
-    z-index: 10;
 }
 
 .navList li {
@@ -115,25 +161,27 @@ h3 {
 .bannerBox {
     display: flex;
     flex-direction: column;
-    padding: 0 2.5rem;
+    padding-left: 2.5rem;
     justify-content: center;
     align-items: flex-start;
+    width: 40%;
 }
 
 .bannerBox h1 {
     padding: 1.5rem 0;
+    width: 85%;
 }
 
 .bannerBox h3 {
-    font-size: 1.5rem;
     padding: 1.5rem 0;
+    width: 85%;
 }
 
 .startBox {
     padding: .5rem;
     background-color: rgba(79, 79, 79, 0.95);
     text-align: center;
-    width: 100%;
+    width: 85%;
     margin-top: 1.5rem;
 }
 
@@ -141,11 +189,41 @@ h3 {
 
 .academyInfo {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    /*justify-content: space-between;*/
 }
 
 .practice {
     display: flex;
     flex-direction: column;
+}
+
+.orient.smallContainer,
+campus.smallContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.smallImg {
+    width: 35%;
+    height: auto;
+}
+
+.smallImg img {
+    max-width: 100%;
+}
+
+.info {
+    margin-left: 1.5rem;
+}
+
+.info h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}   
+
+.info h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
