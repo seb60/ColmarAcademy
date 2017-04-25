@@ -11,7 +11,6 @@ html {
 body {
     display: block;
     justify-content: center;
-    max-width: 100%;
 }
 
 span {
@@ -23,18 +22,18 @@ strong {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 h3 {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.1;
 }
 
 h4 {
-    font-size: 1.2rem;
-    line-height: 1.2;
+    font-size: 1rem;
+    line-height: 1.1;
 }
 
 h5 {
@@ -42,38 +41,30 @@ h5 {
 }
 
 .container {
-    display: flex;
-    padding: 2rem 2rem 2rem 1.5rem;
-    /*width: 73.593rem;*/
-    /*width: 100%;*/
+    /*display: flex;*/
+    /*padding: 2rem 0;*/
+    max-width: 1177.5px;
+    width: 100%;
     margin: auto;
     z-index: 10;
+    /*justify-content: center;*/
 }
 
 .bigContainer {
     display: flex;
-    width: 60%;
+    /*width: 60%;*/
     height: auto;
-    margin-right: 1.4rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 2rem 0;
 }
 
 .bigContainer img {
-    width: 100%;
+    max-width: 706.5px;
     height: auto;
     overflow: hidden;
     display: block;
     /*padding: 2rem 0;*/
-}
-
-.textContainer {
-    max-width: 100%;
-}
-.textContainer h1 {
-    width: 100%;
-}
-
-.textContainer h3 {
-    padding: 1.5rem 0;
 }
 
 .mediumContainer {
@@ -83,25 +74,36 @@ h5 {
     flex-direction: column;
 }
 
+.smallContainer:first-child {
+    display: flex;
+    max-width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    border-left: .5px solid rgba(201, 201, 201, 0.85);
+    border-bottom: .5px solid rgba(201, 201, 201, 0.85);
+}
+
 .smallContainer {
     display: flex;
     max-width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     border-left: .5px solid rgba(201, 201, 201, 0.85);
     border-bottom: .5px solid rgba(201, 201, 201, 0.85);
     /*margin-left: 1rem;*/
-    height: 33.3%;
-
+    /*height: 33.3%;*/
 }
 
 .mainPage {
     position: relative;
-    top: 2.5rem;
+    /*top: 2.5rem;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/*.bigImage {
+    display: flex;*/
+/*}*/
 
 /*General Colors*/
 
@@ -125,10 +127,11 @@ h5 {
 }
 
 .navBar.container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     /*position: fixed;*/
-    width: 100%;
+    width: 1129.5px;
 }
 
 .navList li {
@@ -198,24 +201,53 @@ h5 {
     flex-direction: column;
 }
 
-.orient.smallContainer,
-campus.smallContainer {
+.orient.smallContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.campus.smallContainer,
+.guest.smallContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.smallImg {
+.orient img,
+.campus img,
+.guest img {
+    width: 35%;
+    height: auto;
+}
+
+/*.smallImg {
     width: 35%;
     height: auto;
 }
 
 .smallImg img {
     max-width: 100%;
-}
+}*/
 
 .info {
     margin-left: 1.5rem;
+}
+
+.textContainer h1 {
+    padding: 1rem 0;
+}
+
+
+.textContainer {
+    max-width: 100%;
+}
+.textContainer h1 {
+    width: 100%;
+}
+
+.textContainer h3 {
+    padding: 1rem 0;
 }
 
 .info h3 {
