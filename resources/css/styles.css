@@ -168,6 +168,37 @@ h5 {
     height: 2.5rem;
 }
 
+.navBarMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .navBar.container {
+        display: none;
+    }
+    
+    #navWrap .navBarMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navListMobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .navBarMobile ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 /*Start Banner*/
 
 .startBanner {
@@ -375,3 +406,6 @@ h5 {
 .thesisBody .smallContainer {
     border: none;
 }
+
+/*Footer*/
+
