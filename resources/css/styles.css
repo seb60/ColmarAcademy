@@ -131,6 +131,10 @@ h5 {
     background-color: rgba(232, 232, 232, 0.80);
 }
 
+.mediumBackground {
+    background-color: rgba(142, 142, 142, 0.93);
+}
+
 /*Top Nav Bar*/
 
 #navWrap {
@@ -216,11 +220,7 @@ h5 {
     width: 35%;
 }
 
-.bannerBox h1 {
-    padding: 1.5rem 0;
-    width: 85%;
-}
-
+.bannerBox h1,
 .bannerBox h3 {
     padding: 1.5rem 0;
     width: 85%;
@@ -232,6 +232,45 @@ h5 {
     text-align: center;
     width: 85%;
     margin-top: 1.5rem;
+}
+
+.blankMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .startBanner .bigContainer {
+        display: none;
+    }
+
+    .startBanner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bannerBox {
+        width: 90%;
+        margin: 2rem 1rem;
+        padding: 0;
+    }
+
+    .bannerBox h1,
+    .bannerBox h3,
+    .startBox {
+        width: 100%;
+    }
+
+    .startBox {
+        margin-right: 1rem;
+    }
+
+    .blankMobile {
+        display: block;
+        width: 100%;
+        height: 11.25rem;
+    }
+
 }
 
 /*Academy Information*/
