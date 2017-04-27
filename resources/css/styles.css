@@ -269,6 +269,9 @@ h5 {
         display: block;
         width: 100%;
         height: 11.25rem;
+        background-image: url("../images/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 }
@@ -329,6 +332,57 @@ h5 {
     padding-top: .5rem;
     padding-bottom: .5rem;
 }   
+
+.mediumContainerMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .academyInfo .bigContainer {
+        display: none;
+    }
+
+    .academyInfo {
+        width: 100%;
+    }
+
+    .mediumContainer {
+        display: none;
+    }
+
+    .mediumContainerMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .smallContainerMobile {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .smallContainerMobile img {
+        width: 100%;
+        /*margin: 1rem;*/
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .orientDate {
+        padding-top: 1rem;
+    }
+    
+    .orientDate h5 {
+        padding-bottom: 0;
+    }
+
+}
 
 /*Start Learning Section*/
 
@@ -423,6 +477,40 @@ h5 {
 
 .marketing {
     background-image: url("../images/course-marketing.jpg");
+}
+
+@media only screen and (max-width: 650px) {
+    .miniContainerWrap {
+        display: none;
+    }
+
+    .startLearning {
+        background-color: white;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .miniContainerWrapMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        width: 90%;
+
+    }
+
+    .miniContainerWrapMobile h3 {
+        background-color: rgba(232, 232, 232, 0.80);
+        width: 100%;
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+    .title h1 {
+        padding: 0;
+    }
+
 }
 
 /*Thesis Exhibit*/
